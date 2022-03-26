@@ -13,6 +13,7 @@ export async function initContract() {
   window.walletConnection = new WalletConnection(near)
 
   // Getting the Account ID. If still unauthorized, it's just empty string
+  //testing
   window.accountId = window.walletConnection.getAccountId()
   const account = await near.account(window.accountId);
   const balance = await account.getAccountBalance();

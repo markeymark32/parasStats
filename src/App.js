@@ -10,16 +10,7 @@ import getConfig from './config'
 const { networkId } = getConfig(process.env.NODE_ENV || 'mainnet')
 
 export default function App() {
-  React.useEffect(
-    () => {
-      if (window.walletConnection.isSignedIn()) {
-        // window.contract is set by initContract in index.js
-    
-      }
-    }
-  )
-
-  return (
+   return (
     <Router>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
